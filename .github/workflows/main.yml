@@ -58,6 +58,6 @@ jobs:
       # Run your test
       - name: Check Documentation
         run: |
-          if python3 CS3213_check_doc.py; then\
+          if ! python3 CS3213_check_doc.py; then\
             exit 1
           fi
